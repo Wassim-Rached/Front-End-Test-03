@@ -1,0 +1,98 @@
+:root{
+    --main-color:hsl(257, 40%, 49%);
+}
+body{
+    margin: 0;
+    background-image:url(/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+}
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+.body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.navbar{
+    margin: 40px 0 50px 50px ;
+}
+.aside{
+    margin-left: 50px;
+}
+.navbar .logo img{
+    width: 210px;
+}
+.word{
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 500px;
+}
+.word h1{
+    line-height: 60px;
+    font-family: Poppins;
+    word-spacing: 3px;
+    font-size: 40px;
+}
+.word p{
+    font-Family: Open Sans;
+    min-width: 250px;
+    line-height: 27px;
+    word-spacing: 2px;
+}
+.but {
+    height: 50px;
+    width: 140px;
+    border-radius:0px ;
+    background-color: red;
+    overflow: hidden;
+}
+ button{
+    border: hidden;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-color);
+    background-color: white;
+}
+button:hover{
+    background-color: violet;
+    color: white;
+    border-color: #f9fafb;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+}
+.footer div{  
+    margin: 0 20px;
+    display: inline-block;
+    width: 40px;
+    height: inherit;
+}
+.footer div img{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.footer div img:hover{
+    width: 120%;
+    transform: translateY(-15px);
+}
+.attribution{
+    color:white;
+    width: 100%;
+    font-size: 20px;
+    padding: 25px;
+    background-color: rgb(31, 30, 95);
+}
+.attribution span{
+    margin-left: 20px;
+    font-weight: bold;
+    color: gold;
+    letter-spacing: 5px;
+}
